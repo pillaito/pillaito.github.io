@@ -2,6 +2,6 @@
 
 <script>  
     $.get("https://ipinfo.io", function(response) {  
-            alert(response.ip);  
+        alert(response.ip);  
     }, "json")  
 </script> 
