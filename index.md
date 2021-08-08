@@ -1,7 +1,7 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+<script type="application/javascript">
+  function getIP(json) {
+    document.write("My public IP address is: ", json.ip);
+  }
+</script>
 
-<script>  
-    $.get("https://ipinfo.io", function(response) {  
-        alert(response.ip);  
-    }, "json")  
-</script> 
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
